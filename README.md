@@ -297,12 +297,17 @@ Web-first, API-driven architecture
 
 ## Tech Stack
 
-Frontend → React + Bootstrap  
-Backend → Node.js + Express  
-Database → MongoDB  
-APIs → Weather + Alerts  
-Payments → Razorpay (mock)  
-
+| Layer | Technology | Purpose |
+|------|-----------|--------|
+| Frontend | React.js, Bootstrap | Build responsive user interface |
+| Backend | Node.js, Express.js | API development and business logic |
+| Database | MongoDB (Atlas) | Store users, policies, claims |
+| AI Logic | Rule-based models (DRS, WDI) | Risk scoring and decision making |
+| APIs | Weather API, AQI API, Maps API | Real-time environmental data |
+| Payments | Razorpay (Test Mode) | Simulated payout system |
+| Authentication | JWT | Secure user sessions |
+| Deployment | Vercel, Render | Hosting frontend and backend |
+| Version Control | GitHub | Code management |
 ---
 
 ## Development Plan
