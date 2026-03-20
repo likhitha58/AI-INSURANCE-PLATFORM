@@ -42,7 +42,7 @@ Food delivery partners face unpredictable income loss due to:
 - Work stops for 3 days  
 
 **Income Loss = ₹2400**  
-**InsuRevive auto-pays ₹2400**
+**InsuRevive auto-pays ₹2400 (max) depending upon Temperature, Rainfall and AQI** 
 
 ---
 
@@ -53,7 +53,7 @@ Food delivery partners face unpredictable income loss due to:
 | Scenario | Without InsuRevive | With InsuRevive |
 |---------|------------------|----------------|
 | Heavy Rain (3 days) | No income | Auto-trigger detected |
-| Earnings | ₹0 | ₹2400 payout |
+| Earnings | ₹0 | ₹2400 payout (max) |
 | Action Required | None / Loss absorbed | No action needed |
 | Financial Impact | High loss | Income protected |
 
