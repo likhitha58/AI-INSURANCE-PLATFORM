@@ -68,6 +68,7 @@ Food delivery partners face unpredictable income loss due to:
 • Payout is credited instantly  
 
 **Outcome → Income stability maintained**
+
 ---
 
 ### Case Study 2: Ayesha (Part-Time Worker)
@@ -116,15 +117,17 @@ User Onboarding
       ↓
 AI Risk Profiling (DRS)
       ↓
-Weekly Plan Generated
+Weekly Plan & Premium Generated
       ↓
-Live Monitoring Engine
+Real-Time Monitoring (Weather + AQI + Heat)
       ↓
-Trigger Detected?
+WDI Calculation (Disruption Score Engine)
       ↓
-Auto Claim Engine
+Disruption Level Identified
       ↓
-Payout System
+Auto Claim Decision (Partial / Full)
+      ↓
+Instant Payout
 ```
 
 ---
@@ -161,40 +164,73 @@ DRS = (Environmental Risk + Zone Risk + Work Dependency) / 3
 | Zone Risk | Traffic, strikes |
 | Work Dependency | Full-time vs part-time |
 
-### Example
+---
+
+## AI Decision Models
+
+### Model 1: Worker Disruption Index (WDI)
+
+**Purpose → Determine payout level**
 
 ```
-Env = 70
-Zone = 60
-Work = 90
-
-DRS = 73.3 → High Risk
+WDI = (0.35 × R) + (0.25 × A) + (0.2 × T)
 ```
+
+| WDI Score | Action |
+|----------|--------|
+| 0–30 | No payout |
+| 30–60 | Partial payout |
+| 60–100 | Full payout |
+
+---
+
+### Example Scenarios
+
+**Heavy Rain**
+
+```
+Rain = 90, AQI = 40, Temp = 35
+WDI = 48.5 → Partial payout
+```
+
+**Extreme Heat + AQI**
+
+```
+Rain = 10, AQI = 85, Temp = 80
+WDI = 40.75 → Partial payout
+```
+
+**Severe Conditions**
+
+```
+Rain = 80, AQI = 90, Temp = 85
+WDI = 67.5 → Full payout
+```
+
+---
+
+### Model 2: Risk-Based Pricing
+
+| Risk Level | Weekly Premium |
+|-----------|---------------|
+| Low | ₹10 |
+| Medium | ₹20 |
+| High | ₹40 |
+
+---
+
+### Model 3: Fraud Detection
+
+• High claim frequency → flag  
+• Weather mismatch → reject  
+• Location mismatch → flag  
 
 ---
 
 ## Weekly Premium Model
 
-### Formula
-
 ```
 Weekly Premium = Base + (DRS × Risk Factor) - Stability Discount
-```
-
-### Parameters
-
-| Component | Value |
-|----------|------|
-| Base | ₹50 |
-| Risk Factor | ₹2 |
-| Discount | ₹10–₹30 |
-
-### Example
-
-```
-DRS = 70 → Risk Cost = 140
-
-Premium = 50 + 140 - 30 = ₹160/week
 ```
 
 ---
@@ -205,23 +241,15 @@ Premium = 50 + 140 - 30 = ₹160/week
 Coverage = Avg Daily Income × Disruption Days
 ```
 
-Example:
-
-```
-₹800 × 3 = ₹2400 payout
-```
-
 ---
 
 ## Parametric Trigger Engine
 
-No manual claims required.
-
-| Trigger | Condition | Source |
-|--------|----------|--------|
-| Rain | >50mm | Weather API |
-| Heat | >42°C | Weather API |
-| Curfew | Govt alert | Alerts API |
+| Trigger | Condition |
+|--------|----------|
+| Rain | >50mm |
+| Heat | >42°C |
+| Curfew | Govt alert |
 
 ---
 
@@ -237,206 +265,81 @@ AND user active in zone
 
 ## Fraud Detection System
 
-### Phase 1 (Rule-Based)
-
 • GPS validation  
-• Work activity verification  
-• Duplicate claim prevention  
-
-### Future Enhancements
-
-• Behavior anomaly detection  
-• Risk pattern scoring  
+• Activity verification  
+• Duplicate prevention  
 
 ---
 
 ## Payout System
 
 • UPI transfer (mock)  
-• Wallet credit system  
+• Wallet credit  
 
 ---
 
 ## Dashboards
 
-### User Dashboard
-
-• Weekly premium  
-• Risk score  
-• Claims history  
-
-### Admin Dashboard
-
-• Total users  
-• Total payouts  
-• Fraud alerts  
+**User:** Premium, Risk, Claims  
+**Admin:** Users, Payouts, Fraud alerts  
 
 ---
 
-## Platform Strategy & Justification
+## Platform Strategy
 
-### Web-First, API-Driven Architecture
+Web-first, API-driven architecture  
 
-We adopt a **web-first approach** for speed and accessibility.
-
-### Why this works
-
-✔ No installation required  
+✔ No install required  
 ✔ Works on low-end devices  
-✔ Faster development cycle  
-✔ Easily extendable to:
-
-→ Mobile app  
-→ WhatsApp interface  
-
-### Design Philosophy
-
-**Start lightweight → Scale intelligently**
+✔ Easily scalable  
 
 ---
 
-## Detailed Tech Stack
+## Tech Stack
 
-### Frontend
-
-| Component | Technology |
-|----------|-----------|
-| Framework | React.js |
-| Styling | Bootstrap |
-| State | Context API |
-| UI | Responsive Design |
-
----
-
-### Backend
-
-| Component | Technology |
-|----------|-----------|
-| Runtime | Node.js |
-| Framework | Express.js |
-| API | REST |
-| Auth | JWT |
-
----
-
-### AI / ML Layer
-
-| Component | Approach |
-|----------|----------|
-| Risk Scoring | Rule-based (Phase 1) |
-| Pricing | Formula-driven |
-| Fraud Detection | Rule engine |
-| Future | ML models (anomaly detection) |
-
----
-
-### Database
-
-| Component | Technology |
-|----------|-----------|
-| Database | MongoDB |
-| Hosting | MongoDB Atlas |
-| Collections | Users, Policies, Claims |
-
----
-
-### External Integrations
-
-| Service | Purpose |
-|--------|--------|
-| Weather API | Environmental triggers |
-| Maps API | Location validation |
-| Govt Alerts API | Disruption detection |
-| Razorpay | Payment simulation |
-
----
-
-### Deployment (Planned)
-
-• Frontend → Vercel  
-• Backend → Render / Railway  
-• Database → MongoDB Atlas  
+Frontend → React + Bootstrap  
+Backend → Node.js + Express  
+Database → MongoDB  
+APIs → Weather + Alerts  
+Payments → Razorpay (mock)  
 
 ---
 
 ## Development Plan
 
-### Phase 1: Ideation & Foundation (Weeks 1–2)
+### Phase 1 (Completed)
 
-**Objective → Define problem, validate solution, and prepare development foundation**
+✔ Research  
+✔ System design  
+✔ Risk + pricing models  
+✔ Architecture setup  
+✔ Base code ready  
 
-**Key Tasks & Status:**
-
-✔ Conduct user research (delivery partner pain points)  
-✔ Define persona profiles and real-world scenarios  
-✔ Identify disruption factors (weather, heat, curfews)  
-✔ Design system workflow and architecture  
-✔ Develop DRS (risk scoring model)  
-✔ Define weekly premium calculation logic  
-✔ Finalize parametric triggers and thresholds  
-✔ Outline AI/ML integration approach  
-✔ Prepare README and pitch narrative  
-
-✔ Design project structure (frontend + backend architecture)  
-✔ Define file/folder organization for scalable development  
-✔ Set up initial project repositories  
-✔ Implement base code setup (frontend + backend scaffolding)  
-
-⏳ Prototype development (UI + functional flows) — in progress  
-
-**Outcome → Fully defined system design with development foundation ready**
+⏳ Prototype in progress  
 
 ---
 
-### Phase 2: Build & Integration (Weeks 3–4)
+### Phase 2
 
-**Objective → Develop functional MVP with core automation**
-
-**Planned Tasks:**
-
-⏳ Build responsive frontend (user + admin interfaces)  
-⏳ Develop backend APIs (user, policy, claims)  
-⏳ Set up database schemas (users, policies, triggers)  
-⏳ Integrate external APIs (weather, alerts)  
-⏳ Implement DRS calculation engine  
-⏳ Implement premium calculation logic  
-⏳ Build trigger monitoring system  
-⏳ Develop automatic claim processing engine  
-⏳ Integrate mock payout system (UPI simulation)  
-⏳ Connect frontend with backend services  
-
-**Outcome → Working MVP with end-to-end flow (onboarding → payout)**
+⏳ Full MVP development  
+⏳ API integration  
+⏳ Claim automation  
 
 ---
 
-### Phase 3: Intelligence & Scaling (Weeks 5–6)
+### Phase 3
 
-**Objective → Enhance system intelligence, reliability, and scalability**
-
-**Planned Tasks:**
-
-⏳ Integrate ML-based fraud detection models  
-⏳ Implement anomaly detection for suspicious activity  
-⏳ Build advanced analytics dashboard  
-⏳ Enable real-time monitoring of triggers and claims  
-⏳ Optimize performance and API response times  
-⏳ Improve system reliability and edge-case handling  
-⏳ Prepare demo scenarios and simulation testing  
-⏳ Finalize pitch deck and product demonstration  
-
-**Outcome → Intelligent, scalable, and production-ready prototype**
-
----
+⏳ ML + fraud detection  
+⏳ Dashboard + scaling  
 
 ---
 
 ## Why InsuRevive
 
-✔ Solves a real, underserved problem  
-✔ Introduces income-based insurance  
-✔ Eliminates claim friction  
-✔ Uses AI meaningfully  
-✔ Designed for scalability  
+✔ Real problem  
+✔ Automated system  
+✔ AI-driven decisions  
+✔ Scalable solution  
 
 ---
 
