@@ -135,7 +135,7 @@ Payout System
         ↓
 [Backend API Layer]
         ↓
- ┌───────────────┬───────────────┬───────────────┐
+ ┌───────────────┬───────────────┬
  ↓               ↓               ↓
 [Database]   [AI Engine]   [External APIs]
                                ↓
