@@ -462,7 +462,7 @@ Web-first, API-driven architecture
 ---
 ## Team
 
-**Team Name:** InsuRevive  
+**Team Name:** IntelliCrew
 
 **Members:**
 
