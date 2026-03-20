@@ -59,14 +59,15 @@ Food delivery partners face unpredictable income loss due to:
 
 **System Flow:**
 
-Ravi starts his week →  
-Risk score (DRS) calculated →  
-Weekly premium generated →  
-Rainfall exceeds threshold →  
-Trigger activated →  
-Auto payout credited →  
-Income stability maintained  
+• Ravi starts his work week  
+• System calculates DRS (risk profile)  
+• Weekly premium is generated  
+• Rainfall exceeds trigger threshold  
+• Parametric trigger activates automatically  
+• Claim is processed without user input  
+• Payout is credited instantly  
 
+**Outcome → Income stability maintained**
 ---
 
 ### Case Study 2: Ayesha (Part-Time Worker)
@@ -360,42 +361,72 @@ We adopt a **web-first approach** for speed and accessibility.
 
 ## Development Plan
 
-### Phase 1: Ideation & Foundation
+### Phase 1: Ideation & Foundation (Weeks 1–2)
 
-```
-Week 1:
-- Problem Research
-- Persona Design
-- Market Analysis
+**Objective → Define problem, validate solution, and prepare development foundation**
 
-Week 2:
-- Workflow Design
-- Risk Model (DRS)
-- Premium Logic
-- README + Pitch Video
-```
+**Key Tasks & Status:**
+
+✔ Conduct user research (delivery partner pain points)  
+✔ Define persona profiles and real-world scenarios  
+✔ Identify disruption factors (weather, heat, curfews)  
+✔ Design system workflow and architecture  
+✔ Develop DRS (risk scoring model)  
+✔ Define weekly premium calculation logic  
+✔ Finalize parametric triggers and thresholds  
+✔ Outline AI/ML integration approach  
+✔ Prepare README and pitch narrative  
+
+✔ Design project structure (frontend + backend architecture)  
+✔ Define file/folder organization for scalable development  
+✔ Set up initial project repositories  
+✔ Implement base code setup (frontend + backend scaffolding)  
+
+⏳ Prototype development (UI + functional flows) — in progress  
+
+**Outcome → Fully defined system design with development foundation ready**
 
 ---
 
-### Phase 2: Build & Integration
+### Phase 2: Build & Integration (Weeks 3–4)
 
-```
-Frontend UI → Backend APIs → Database Setup
-        ↓
-Trigger Integration → Claim Engine → Payout System
-```
+**Objective → Develop functional MVP with core automation**
+
+**Planned Tasks:**
+
+⏳ Build responsive frontend (user + admin interfaces)  
+⏳ Develop backend APIs (user, policy, claims)  
+⏳ Set up database schemas (users, policies, triggers)  
+⏳ Integrate external APIs (weather, alerts)  
+⏳ Implement DRS calculation engine  
+⏳ Implement premium calculation logic  
+⏳ Build trigger monitoring system  
+⏳ Develop automatic claim processing engine  
+⏳ Integrate mock payout system (UPI simulation)  
+⏳ Connect frontend with backend services  
+
+**Outcome → Working MVP with end-to-end flow (onboarding → payout)**
 
 ---
 
-### Phase 3: Intelligence & Scaling
+### Phase 3: Intelligence & Scaling (Weeks 5–6)
 
-```
-ML Integration → Fraud Detection Upgrade
-        ↓
-Advanced Dashboard → Real-Time Monitoring
-        ↓
-Scalability Improvements
-```
+**Objective → Enhance system intelligence, reliability, and scalability**
+
+**Planned Tasks:**
+
+⏳ Integrate ML-based fraud detection models  
+⏳ Implement anomaly detection for suspicious activity  
+⏳ Build advanced analytics dashboard  
+⏳ Enable real-time monitoring of triggers and claims  
+⏳ Optimize performance and API response times  
+⏳ Improve system reliability and edge-case handling  
+⏳ Prepare demo scenarios and simulation testing  
+⏳ Finalize pitch deck and product demonstration  
+
+**Outcome → Intelligent, scalable, and production-ready prototype**
+
+---
 
 ---
 
