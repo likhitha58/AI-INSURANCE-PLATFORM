@@ -30,7 +30,7 @@ Food delivery partners face unpredictable income loss due to:
 
 ## Persona & Real-World Scenario
 
-### Delivery Partner – Ravi
+### Delivery Partner – Vinod
 
 - City: Hyderabad  
 - Income: ₹800/day  
@@ -48,7 +48,7 @@ Food delivery partners face unpredictable income loss due to:
 
 ## Real-World Simulation: Before vs After InsuRevive
 
-### Case Study 1: Ravi (Full-Time Worker)
+### Case Study 1: Vinod (Full-Time Worker)
 
 | Scenario | Without InsuRevive | With InsuRevive |
 |---------|------------------|----------------|
@@ -59,7 +59,7 @@ Food delivery partners face unpredictable income loss due to:
 
 **System Flow:**
 
-• Ravi starts his work week  
+• Vinod starts his work week  
 • System calculates DRS (risk profile)  
 • Weekly premium is generated  
 • Rainfall exceeds trigger threshold  
