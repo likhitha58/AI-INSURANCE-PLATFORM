@@ -484,6 +484,12 @@ Version Control (GitHub)
 • Rithwik 
 
 ---
+## Demo Video
+
+🎥 **Watch our 2-minute demo:**  
+[InsuRevive Demo Video](https://drive.google.com/file/d/1y64U2YoriLnO3MuYpIoGjYsygYrDn6mb/view?usp=sharing)
+
+---
 
 ## Final Pitch
 
