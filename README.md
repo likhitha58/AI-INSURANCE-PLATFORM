@@ -1,207 +1,348 @@
-🚀 InsuRevive ⚡
-AI-Powered Parametric Income Protection for Delivery Partners
+# InsuRevive ⚡  
+### AI-Powered Parametric Income Protection for Delivery Partners  
 
-“We are not insuring assets — we are protecting livelihoods using AI-driven, real-time, parametric insurance.”
+> **“We are not insuring assets — we are protecting livelihoods using AI-driven, real-time, parametric insurance.”**
 
-🔥 Problem Statement
+---
+
+## Problem Statement
 
 Food delivery partners face unpredictable income loss due to:
 
-🌧️ Weather disruptions
+• Weather disruptions  
+• Extreme heat  
+• Curfews / strikes  
 
-🌡️ Extreme heat
+✖ No existing insurance product protects daily earnings  
 
-🚧 Curfews / strikes
+---
 
-❌ No existing insurance product protects daily earnings
+## Solution Overview
 
-💡 Solution Overview
+**InsuRevive** is an AI-powered platform that:
 
-InsuRevive is an AI-powered platform that:
+✔ Insures weekly income (not assets)  
+✔ Uses parametric triggers  
+✔ Enables automatic claims  
+✔ Provides instant payouts  
 
-✅ Insures weekly income (not assets)
+---
 
-⚡ Uses parametric triggers
+## Persona & Real-World Scenario
 
-🤖 Enables automatic claims
+### Delivery Partner – Ravi
 
-💸 Provides instant payouts
+- City: Hyderabad  
+- Income: ₹800/day  
+- Work: 9 hrs/day (full-time)  
 
-🧠 Persona & Real-World Scenario
-👤 Delivery Partner – Ravi
+### Scenario: Rain Disruption
 
-City: Hyderabad
+- Rainfall > 50mm  
+- Work stops for 3 days  
 
-Income: ₹800/day
+**Income Loss = ₹2400**  
+**InsuRevive auto-pays ₹2400**
 
-Work: 9 hrs/day (full-time)
+---
 
-🌧️ Scenario: Rain Disruption
+## End-to-End Workflow
 
-Rainfall > 50mm
+```
+User Onboarding
+      ↓
+AI Risk Profiling (DRS)
+      ↓
+Weekly Plan Generated
+      ↓
+Live Monitoring Engine
+      ↓
+Trigger Detected?
+      ↓
+Auto Claim Engine
+      ↓
+Payout System
+```
 
-Work stops for 3 days
+---
 
-💥 Income Loss = ₹2400
-✅ InsuRevive auto-pays ₹2400
+## System Architecture Overview
 
-⚙️ End-to-End Workflow
-🧩 System Architecture Overview
-🧠 AI Risk Profiling Engine (Core)
-🔢 DRS Formula
+```
+[Frontend (React)]
+        ↓
+[Backend API Layer]
+        ↓
+ ┌───────────────┬───────────────┬───────────────┐
+ ↓               ↓               ↓               ↓
+[Database]   [AI Engine]   [External APIs]   [Weather / Govt Alerts]
+                    
+```
+
+---
+
+## AI Risk Profiling Engine (Core)
+
+### DRS Formula
+
+```
 DRS = (Environmental Risk + Zone Risk + Work Dependency) / 3
-📊 Components
-Factor	Description
-🌧️ Environmental Risk	Rain, heat, pollution
-📍 Zone Risk	Traffic, strikes
-⏱️ Work Dependency	Full-time vs part-time
-📌 Example
+```
+
+### Components
+
+| Factor | Description |
+|--------|------------|
+| Environmental Risk | Rain, heat, pollution |
+| Zone Risk | Traffic, strikes |
+| Work Dependency | Full-time vs part-time |
+
+### Example
+
+```
 Env = 70
 Zone = 60
 Work = 90
 
-DRS = 73.3 → HIGH RISK
-💰 Weekly Premium Model
-🔢 Formula
+DRS = 73.3 → High Risk
+```
+
+---
+
+## Weekly Premium Model
+
+### Formula
+
+```
 Weekly Premium = Base + (DRS × Risk Factor) - Stability Discount
-💰 Parameters
-Component	Value
-Base	₹50
-Risk Factor	₹2
-Discount	₹10–₹30
-📌 Example
+```
+
+### Parameters
+
+| Component | Value |
+|----------|------|
+| Base | ₹50 |
+| Risk Factor | ₹2 |
+| Discount | ₹10–₹30 |
+
+### Example
+
+```
 DRS = 70 → Risk Cost = 140
 
 Premium = 50 + 140 - 30 = ₹160/week
-💡 Coverage Model
+```
+
+---
+
+## Coverage Model
+
+```
 Coverage = Avg Daily Income × Disruption Days
-Example
+```
+
+Example:
+
+```
 ₹800 × 3 = ₹2400 payout
-⚡ Parametric Trigger Engine
-🚨 No Manual Claims
-Trigger	Condition	Source
-🌧️ Rain	>50mm	Weather API
-🌡️ Heat	>42°C	Weather API
-🚧 Curfew	Govt alert	Alerts API
-🤖 Automatic Claim Engine
-IF trigger detected
-AND user active in zone
+```
+
+---
+
+## Parametric Trigger Engine
+
+No manual claims required.
+
+| Trigger | Condition | Source |
+|--------|----------|--------|
+| Rain | >50mm | Weather API |
+| Heat | >42°C | Weather API |
+| Curfew | Govt alert | Alerts API |
+
+---
+
+## Automatic Claim Engine
+
+```
+IF trigger detected  
+AND user active in zone  
 → Auto payout initiated
-🛡️ Fraud Detection System
-🔍 Rule-Based (Phase 1)
+```
 
-GPS validation
+---
 
-Work activity check
+## Fraud Detection System
 
-Duplicate claim prevention
+### Phase 1 (Rule-Based)
 
-🤖 AI-Based (Future)
+• GPS validation  
+• Work activity verification  
+• Duplicate claim prevention  
 
-Behavior anomaly detection
+### Future Enhancements
 
-Risk pattern scoring
+• Behavior anomaly detection  
+• Risk pattern scoring  
 
-💸 Payout System
+---
 
-UPI Transfer (mock)
+## Payout System
 
-Wallet credit system
+• UPI transfer (mock)  
+• Wallet credit system  
 
-📊 Dashboards
-👤 User Dashboard
+---
 
-Premium
+## Dashboards
 
-Risk score
+### User Dashboard
 
-Claims history
+• Weekly premium  
+• Risk score  
+• Claims history  
 
-🧑‍💼 Admin Dashboard
+### Admin Dashboard
 
-Total users
+• Total users  
+• Total payouts  
+• Fraud alerts  
 
-Total payouts
+---
 
-Fraud alerts
+## Platform Strategy & Justification
 
-🌐 Platform Strategy & Justification
-🖥️ Hybrid Web-First Platform (Chosen)
+### Web-First, API-Driven Architecture
 
-We adopt a Web-first + API-driven architecture.
+We adopt a **web-first approach** for speed and accessibility.
 
-Why this works:
+### Why this works
 
-✅ Zero friction onboarding (no install required)
+✔ No installation required  
+✔ Works on low-end devices  
+✔ Faster development cycle  
+✔ Easily extendable to:
 
-✅ Accessible across low-end devices
+### Design Philosophy
 
-✅ Faster iteration for hackathon
+**Start lightweight → Scale intelligently**
 
-✅ Easy transition to:
+---
 
-📱 Mobile app
+## Detailed Tech Stack
 
-💬 WhatsApp bot (future)
+### Frontend
 
-Design Philosophy:
+| Component | Technology |
+|----------|-----------|
+| Framework | React.js |
+| Styling | Bootstrap |
+| State | Context API |
+| UI | Responsive Design |
 
-“Start lightweight → Scale omnichannel”
+---
 
-🏗️ Detailed Tech Stack
-🧱 Frontend Layer
-Component	Technology
-Framework	React.js
-Styling	Bootstrap
-State Management	Context API
-UI Design	Responsive Web UI
-⚙️ Backend Layer
-Component	Technology
-Runtime	Node.js
-Framework	Express.js
-API Style	REST APIs
-Auth	JWT-based
-🧠 AI/ML Layer
-Component	Approach
-Risk Scoring	Rule-based (Phase 1)
-Dynamic Pricing	Formula-based
-Fraud Detection	Rule engine
-Future	ML models (classification, anomaly detection)
-🗄️ Database Layer
-Component	Technology
-Database	MongoDB
-Data Types	User, Policy, Claims
-Hosting	Cloud (Atlas/local)
-🌐 External Integrations
-Service	Purpose
-Weather API	Rain, temperature
-Maps API	Zone validation
-Govt Alerts API	Curfew/strike
-Razorpay	Mock payments
-☁️ Deployment (Future)
+### Backend
 
-Frontend → Vercel
+| Component | Technology |
+|----------|-----------|
+| Runtime | Node.js |
+| Framework | Express.js |
+| API | REST |
+| Auth | JWT |
 
-Backend → Render / Railway
+---
 
-DB → MongoDB Atlas
+### AI / ML Layer
 
-🗺️ Development Plan (Creative + Visual)
-🚀 Phase 1: Ideation & Foundation (Weeks 1–2)
-⚙️ Phase 2: Build & Integration
-🚀 Phase 3: Intelligence & Scaling
-🎯 Why InsuRevive Wins
+| Component | Approach |
+|----------|----------|
+| Risk Scoring | Rule-based (Phase 1) |
+| Pricing | Formula-driven |
+| Fraud Detection | Rule engine |
+| Future | ML models (anomaly detection) |
 
-🎯 Solves a real, ignored problem
+---
 
-💡 Introduces income insurance
+### Database
 
-⚡ Fully automated system
+| Component | Technology |
+|----------|-----------|
+| Database | MongoDB |
+| Hosting | MongoDB Atlas |
+| Collections | Users, Policies, Claims |
 
-🤖 Smart AI integration
+---
 
-📈 Highly scalable model
+### External Integrations
 
-🏁 Final Pitch Line
+| Service | Purpose |
+|--------|--------|
+| Weather API | Environmental triggers |
+| Maps API | Location validation |
+| Govt Alerts API | Disruption detection |
+| Razorpay | Payment simulation |
 
-“InsuRevive ensures that when deliveries stop, income doesn’t.”
+---
+
+### Deployment (Planned)
+
+• Frontend → Vercel  
+• Backend → Render / Railway  
+• Database → MongoDB Atlas  
+
+---
+
+## Development Plan
+
+### Phase 1: Ideation & Foundation
+
+```
+Week 1:
+- Problem Research
+- Persona Design
+- Market Analysis
+
+Week 2:
+- Workflow Design
+- Risk Model (DRS)
+- Premium Logic
+- README + Pitch Video
+```
+
+---
+
+### Phase 2: Build & Integration
+
+```
+Frontend UI → Backend APIs → Database Setup
+        ↓
+Trigger Integration → Claim Engine → Payout System
+```
+
+---
+
+### Phase 3: Intelligence & Scaling
+
+```
+ML Integration → Fraud Detection Upgrade
+        ↓
+Advanced Dashboard → Real-Time Monitoring
+        ↓
+Scalability Improvements
+```
+
+---
+
+## Why InsuRevive
+
+✔ Solves a real, underserved problem  
+✔ Introduces income-based insurance  
+✔ Eliminates claim friction  
+✔ Uses AI meaningfully  
+✔ Designed for scalability  
+
+---
+
+## Final Pitch
+
+> **“InsuRevive ensures that when deliveries stop, income doesn’t.”**
