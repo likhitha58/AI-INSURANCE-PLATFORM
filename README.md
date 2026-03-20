@@ -57,17 +57,85 @@ Food delivery partners face unpredictable income loss due to:
 | Action Required | None / Loss absorbed | No action needed |
 | Financial Impact | High loss | Income protected |
 
-**System Flow:**
+---
 
-• Vinod starts his work week  
-• System calculates DRS (risk profile)  
-• Weekly premium is generated  
-• Rainfall exceeds trigger threshold  
-• Parametric trigger activates automatically  
-• Claim is processed without user input  
-• Payout is credited instantly  
+### Detailed System Flow & Calculations
 
-**Outcome → Income stability maintained**
+**Step 1: Onboarding Data**
+
+- Daily Income = ₹800  
+- Work Hours = 9 hrs/day  
+- City = Hyderabad  
+
+---
+
+**Step 2: DRS Calculation (Risk Profiling)**
+
+```
+Environmental Risk = 70
+Zone Risk = 60
+Work Dependency = 90
+
+DRS = (70 + 60 + 90) / 3 = 73.3 → High Risk
+```
+
+---
+
+**Step 3: Weekly Premium Calculation**
+
+```
+Base = ₹50
+Risk Factor = 2 × DRS = 2 × 73 = 146
+Stability Discount = ₹30
+
+Weekly Premium = 50 + 146 - 30 = ₹166 (~₹160)
+```
+
+---
+
+**Step 4: Real-Time Disruption Detection**
+
+- Rainfall detected = 90 (high intensity)  
+- AQI = 40  
+- Temperature = 35  
+
+---
+
+**Step 5: WDI Calculation (Core Decision Model)**
+
+```
+WDI = (0.35 × 90) + (0.25 × 40) + (0.2 × 35)
+    = 31.5 + 10 + 7
+    = 48.5 → Moderate disruption
+```
+
+---
+
+**Step 6: Claim Decision**
+
+- WDI = 48.5 → Partial disruption  
+- But rainfall exceeds parametric threshold (>50mm)  
+→ Claim triggered  
+
+---
+
+**Step 7: Payout Calculation**
+
+```
+Coverage = Daily Income × Disruption Days
+         = 800 × 3
+         = ₹2400
+```
+
+---
+
+**Final Outcome**
+
+✔ Claim triggered automatically  
+✔ No manual request required  
+✔ ₹2400 credited instantly  
+
+**→ Income stability maintained**
 
 ---
 
@@ -90,24 +158,69 @@ Food delivery partners face unpredictable income loss due to:
 
 ---
 
-## Impact Summary
+### Detailed System Flow & Calculations
 
-| Metric | Without System | With InsuRevive |
-|-------|--------------|----------------|
-| Income Stability | Unpredictable | Protected |
-| Claim Process | Manual / None | Automated |
-| Response Time | Delayed | Instant |
-| User Effort | High | Zero |
+**Step 1: Onboarding Data**
+
+- Daily Income = ₹500  
+- Work Type = Part-time  
 
 ---
 
-## Key Insight
+**Step 2: DRS Calculation**
 
-Traditional insurance reacts **after loss**.  
-**InsuRevive acts at the moment of disruption.**
+```
+Environmental Risk = 65
+Zone Risk = 50
+Work Dependency = 50
 
-> This transforms insurance from reactive protection → proactive income security.
+DRS = (65 + 50 + 50) / 3 = 55 → Medium Risk
+```
 
+---
+
+**Step 3: Disruption Detection**
+
+- Temperature = 85 (scaled)  
+- AQI = 70  
+- Rain = 10  
+
+---
+
+**Step 4: WDI Calculation**
+
+```
+WDI = (0.35 × 10) + (0.25 × 70) + (0.2 × 85)
+    = 3.5 + 17.5 + 17
+    = 38 → Moderate disruption
+```
+
+---
+
+**Step 5: Claim Trigger**
+
+- Heat threshold exceeded (>42°C)  
+→ Claim triggered automatically  
+
+---
+
+**Step 6: Payout Calculation**
+
+```
+Coverage = 500 × 2 = ₹1000
+```
+
+---
+
+**Final Outcome**
+
+✔ Heat-based trigger activated  
+✔ ₹1000 payout credited  
+✔ No claim filing required  
+
+**→ Financial stability maintained**
+
+---
 ---
 
 ## End-to-End Workflow
