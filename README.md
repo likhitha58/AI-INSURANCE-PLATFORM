@@ -46,6 +46,68 @@ Food delivery partners face unpredictable income loss due to:
 
 ---
 
+## Real-World Simulation: Before vs After InsuRevive
+
+### Case Study 1: Ravi (Full-Time Worker)
+
+| Scenario | Without InsuRevive | With InsuRevive |
+|---------|------------------|----------------|
+| Heavy Rain (3 days) | No income | Auto-trigger detected |
+| Earnings | ₹0 | ₹2400 payout |
+| Action Required | None / Loss absorbed | No action needed |
+| Financial Impact | High loss | Income protected |
+
+**System Flow:**
+
+Ravi starts his week →  
+Risk score (DRS) calculated →  
+Weekly premium generated →  
+Rainfall exceeds threshold →  
+Trigger activated →  
+Auto payout credited →  
+Income stability maintained  
+
+---
+
+### Case Study 2: Ayesha (Part-Time Worker)
+
+- Income: ₹500/day  
+- Work: 5 hrs/day  
+
+#### Scenario: Extreme Heat
+
+- Temperature > 42°C  
+- Unable to work for 2 days  
+
+| Scenario | Without InsuRevive | With InsuRevive |
+|---------|------------------|----------------|
+| Heat disruption | Stops working | Trigger detected |
+| Earnings | ₹0 | ₹1000 payout |
+| Effort | No support | Fully automated |
+| Outcome | Income loss | Stability maintained |
+
+---
+
+## Impact Summary
+
+| Metric | Without System | With InsuRevive |
+|-------|--------------|----------------|
+| Income Stability | Unpredictable | Protected |
+| Claim Process | Manual / None | Automated |
+| Response Time | Delayed | Instant |
+| User Effort | High | Zero |
+
+---
+
+## Key Insight
+
+Traditional insurance reacts **after loss**.  
+**InsuRevive acts at the moment of disruption.**
+
+> This transforms insurance from reactive protection → proactive income security.
+
+---
+
 ## End-to-End Workflow
 
 ```
@@ -74,9 +136,10 @@ Payout System
 [Backend API Layer]
         ↓
  ┌───────────────┬───────────────┬───────────────┐
- ↓               ↓               ↓               ↓
-[Database]   [AI Engine]   [External APIs]   [Weather / Govt Alerts]
-                    
+ ↓               ↓               ↓
+[Database]   [AI Engine]   [External APIs]
+                               ↓
+                    Weather / Govt Alerts
 ```
 
 ---
@@ -221,6 +284,9 @@ We adopt a **web-first approach** for speed and accessibility.
 ✔ Works on low-end devices  
 ✔ Faster development cycle  
 ✔ Easily extendable to:
+
+→ Mobile app  
+→ WhatsApp interface  
 
 ### Design Philosophy
 
