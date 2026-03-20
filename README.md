@@ -460,6 +460,18 @@ Web-first, API-driven architecture
 ✔ Scalable solution  
 
 ---
+## Team
+
+**Team Name:** InsuRevive  
+
+**Members:**
+
+• Likhitha  
+• Rishika  
+• Vignesh  
+• Rithwik 
+
+---
 
 ## Final Pitch
 
